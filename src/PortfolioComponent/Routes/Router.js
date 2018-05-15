@@ -37,12 +37,12 @@ let Routes = () => (
       <div>
         <Header />
         <Switch>
-          <Welcome path="/" component={Welcome} exact={true}/> 
-          <About path="/about" component={About} />
-          <Portfolio path="/portfolio" exact={true} component={Portfolio} />
-          <ProtfolioItem path="/portfolio/:id" component={ProtfolioItem} />
-          <Contact path="/contact" component={Contact} />
-          <NotFound component={NotFound} />
+          <Route path="/" component={Welcome} exact={true}/> 
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" exact={true} component={Portfolio} />
+          <Route path="/portfolio/:id" component={ProtfolioItem} />
+          <Route path="/contact" component={Contact} />
+          <Route component={NotFound} />
         </Switch>
       </div>
     </BrowserRouter>
