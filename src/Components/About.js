@@ -1,13 +1,12 @@
 import React from 'react';
 
-class About extends React.Component {
-  render() {
+let About = (props) => {
+  console.log(props);
     return (
       <div>
-        About
+        About {props.match.params.id && <strong>{props.match.params.id}</strong>}
       </div>
     )
-  }
 };
 
 export {About as default}
